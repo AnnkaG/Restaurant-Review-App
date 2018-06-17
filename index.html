@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link rel="stylesheet" href="css/styles.css">
   <title>Restaurant Reviews</title>
@@ -16,15 +18,16 @@
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application" aria-label="map of the restaurants" alt= "Google Map displaying restaurant position"></div>
     </section>
     <section>
       <div class="filter-options">
+        
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select aria-label = "select neighborhood of restaurant" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select aria-label="select type of cuisine" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
@@ -34,7 +37,7 @@
 
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr82af_Dz-RrcGbwyx0fPxxrPV6vJu-3A&libraries=places&callback=initMap"></script>
 
 
   <footer id="footer">

@@ -1,28 +1,36 @@
-# Mobile Web Specialist Certification Course
+# Restaurant Review App (Stage 1)
 ---
-#### _Three Stage Course Material Project - Restaurant Reviews_
+
 
 ## Project Overview: Stage 1
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+Project fulfills three requirements:
+1. Accesibilty
+2. Responsivnes
+3. Run Offline
 
-### Specification
+In the project you can see map with the location of the restaurants. From drop down menu you can choose the area and type of restaurant. After clicking the button for "details" you can see the details of the restaurant (opening hours, reviews).
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+### Installation and running locally
 
-### What do I do from here?
-
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
-
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
-
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and make start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
-
-### Note about ES6
-
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+1.	Clone this repository to your desktop.
+2.	Open the root folder of the repository in a terminal
+3.	Run npm i
+4.	Check your python version by python -V
+5.	Start local server:
+	   For Python 2.x: python -m SimpleHTTPServer 8000
+       For Python 3.x: python3 -m http.server 8000
+6.	Open index.html on http://localhost:8000/index.html
 
 
+### Project structure
+
+1. index.html - main HTML page is
+2. restaurant.html - details of the restaurants
+3. css/styles.css - stylesheet
+4. js/main.js - javascript file for the main page
+5. js/restaurant_info.js - javascript file for the restaurant detail page 
+6. js/dbhelper.js - javascript file to fetch the data from the server 
+7. service-worker.js - service worker file
+8. img - containes all used images
 
